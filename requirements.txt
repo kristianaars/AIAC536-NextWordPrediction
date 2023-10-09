@@ -1,0 +1,8 @@
+tensorflow
+jupyter
+numpy
+keras
+regex
+flask
+pyyaml
+h5py

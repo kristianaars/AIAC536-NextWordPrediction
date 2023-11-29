@@ -4,8 +4,8 @@ from flask import Flask, jsonify, request
 
 from NextWordPredictor import NextWordPredictor
 
-next_word_predictor = NextWordPredictor('./models/model_2023-10-09_16:42:20.167006.h5',
-                                        './models/tokenizer_2023-10-09_16:13:04.051530.pickle')
+next_word_predictor = NextWordPredictor('./models/model_LSTM_128_NGRAM_3_SENTENCE_1000.h5',
+                                        './models/tokenizer_LSTM_128_NGRAM_3_SENTENCE_1000.pickle')
 
 app = Flask(__name__)
 

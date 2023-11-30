@@ -2,3 +2,6 @@ venv
 .idea
 models
 dataset
+checkpoints
+blogtext*.csv
+logs

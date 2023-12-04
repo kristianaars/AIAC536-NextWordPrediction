@@ -4,11 +4,10 @@ from flask import Flask, jsonify, request
 
 from NextWordPredictor import NextWordPredictor
 
-next_word_predictor = NextWordPredictor('./models/model_LSTM_128_NGRAM_3_SENTENCE_1000.h5',
-                                        './models/tokenizer_LSTM_128_NGRAM_3_SENTENCE_1000.pickle')
+next_word_predictor = NextWordPredictor('model.h5',
+                                        'tokenizer.pickle')
 
 app = Flask(__name__)
-
 
 @app.route('/predict', methods=['POST'])
 def predict_next_word():
